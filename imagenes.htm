@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{
+                text-align:center;
+                margin:20px auto;
+                width:70%;
+                background-color:rgb(0,0,20);
+            }
+            #link td{
+                border-style:solid; 
+                border-color:Black; 
+                border-radius:400px 0 400px  400px ; 
+                text-align:center;
+               
+                bo
+            }
+            #link img{
+                width:150px;
+                border-radius:300px 0 300px  300px ; 
+            }
+            #pie img{
+                width:100px;
+            }
+            #link td:hover{
+            
+               border-color:Red;
+               width:250px;
+               
+            }
+        </style>
+        <title>- - RED FUSA LIBRE </title>
+        <script>
+var repeat=0 //enter 0 to not repeat scrolling after 1 run, othersise, enter 1
+var title=document.title
+var leng=title.length
+var start=1
+function titlemove() {
+titl=title.substring(start, leng) + title.substring(0, start)
+document.title=titl
+start++
+if (start==leng+1) {
+start=0
+if (repeat==-1)
+return
+}
+setTimeout("titlemove()",140)
+}
+if (document.title)
+titlemove()
+</script>
+<script language="javascript"> 
+
+//Aquí cambia los nombres de las imágenes por las tuyas. 
+var imagenes=new Array() 
+
+imagenes[0]=new Image (380,288); 
+imagenes[0].src="imagenes/g1.jpg" 
+imagenes[1]=new Image (399,291); 
+imagenes[1].src="imagenes/g2.jpg" 
+imagenes[2]=new Image (248,289); 
+imagenes[2].src="imagenes/g3.jpg" 
+imagenes[3]=new Image (215,366); 
+imagenes[3].src="imagenes/g4.jpg" 
+imagenes[4]=new Image (215,366); 
+imagenes[4].src="imagenes/g5.jpg" 
+imagenes[5]=new Image (215,366); 
+imagenes[5].src="imagenes/g6.jpg" 
+imagenes[6]=new Image (215,366); 
+imagenes[6].src="imagenes/g7.jpg" 
+imagenes[7]=new Image (215,366); 
+imagenes[7].src="imagenes/g8.jpg" 
+imagenes[8]=new Image (215,366); 
+imagenes[8].src="imagenes/g9.jpg" 
+imagenes[9]=new Image (215,366); 
+imagenes[9].src="imagenes/g10.jpg" 
+imagenes[10]=new Image (215,366); 
+imagenes[10].src="imagenes/g11.jpg" 
+cont=0 
+function presImagen() 
+{ 
+if (document.all){ 
+document.getElementById('foto').filters.blendTrans.apply() 
+document.getElementById('foto').src=imagenes[cont].src 
+document.getElementById('foto').filters.blendTrans.play() 
+} 
+else 
+    { 
+    document.images.foto.src = imagenes[cont].src 
+    } 
+if (cont < imagenes.length-1) 
+{cont ++} 
+else 
+{cont=0} 
+tiempo=window.setTimeout('presImagen()',5000) 
+ //cada 5000 milisegundos (5 seg.) cambia la imagen. 
+//cambia la cantidad por el tiempo que quieras que transcurra entre imagen e imagen 
+} 
+
+</script>
+    </head>
+    <body >
+<a href="javascript:history.back()">- Volver -</a>
+<table style="width:100%; border-collapse:separate; border-spacing:15px 15px;">
+                <tr><td><a href="index.html" ><center><h3>INICIO</h3></a>
+		</td></tr>
+            </table>
+<body bgcolor="#FFFFFF" text="#000000" onLoad="presImagen()"> 
+<img id="foto" src="tibidabo.jpg" style="filter:blendTrans(duration=[b]3[/b])"> 
+<!-- la duración de la transición es de 3 segundos.  
+Cambia este valor según tus preferencias --> 
+</body> 
+    
+
+</head>
+<body onload="rotacion()">
+<img src="http://illiweb.com/fa/empty.gif" name="anuncio" alt="Anuncios" />
+    </body>
+</html>
+

@@ -1,0 +1,83 @@
+body{
+	text-align:center;
+	margin:0;
+	padding:0;
+	padding-bottom:10px;
+	background-color:#ddd;
+	font-family:Ubuntu, Tahoma, Verdana, Arial;
+	font-size:9pt;
+	width:100%;
+}
+h1{
+	text-shadow:0 0 8px;
+	margin: 10px;
+}
+a{
+	color:#669;
+	text-decoration:none;
+}
+img.logo{
+	width:150px;
+	box-shadow:1px 1px 5px;
+	border-radius:25px;
+	float:left;
+}
+.contenido{
+	background-color:#fff;
+	border-radius:20px;
+	padding:20px;
+	margin:10px 50px 5px 50px;
+	box-shadow:0 0 35px;
+}
+.presentacion{
+	text-align:justify;
+	padding-right:50px;
+}
+.servicios{
+	text-align:center;
+	margin: 0 auto;
+}
+.elServicio{
+	width:120px;
+	background-image:url('imagenes/');
+	background-size:auto 60px;
+	background-repeat:no-repeat;
+	background-position:center top;
+	margin:0 auto;
+}
+.fondoServicio{
+	width:120px;
+	height:100px;
+	background-image:url('imagenes/iconoBase.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.servicio{
+	float:left;
+	border-radius:30px;
+	position:relative;
+	margin:10px;
+	min-width:140px;
+	max-width:140px;
+	min-height:180px;
+	max-height:180px;
+	text-shadow:0 0 4px;
+}
+.servicio:hover{
+	background-color:#bcd;
+}
+.opaco{
+	background-color:#ddd;
+	border-radius:30px;
+	text-shadow:1px 1px 4px;
+	box-shadow:1px 1px 10px;
+	clear:both;
+}
+.opaco img{
+	height:100px;
+}
+.pie{
+	color:#222;
+}
+

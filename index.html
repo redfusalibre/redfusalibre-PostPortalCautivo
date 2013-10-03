@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Estilos/Apariencia y Comportamiento -->
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+	<!-- Fin Estilos/Apariencia y Comportamiento -->
+
+	<!-- Titulo Corredizo -->
+	<title>((o)) Red Fusa Libre ((o)) Liberate!</title>
+<script>
+	var repeat=0 //enter 0 to not repeat scrolling after 1 run, othersise, enter 1
+	var title=document.title
+	var leng=title.length
+	var start=1
+	function titlemove() {
+		titl=title.substring(start, leng) + title.substring(0, start)
+		document.title=titl
+		start++
+		if (start==leng+1) {
+			start=0
+			if (repeat==-1)
+				return
+			}
+		setTimeout("titlemove()",140)
+	}
+	if (document.title)
+		titlemove()
+</script>
+<!-- Fin Titulo Corredizo -->
+
+</head>
+
+<!-- Cuerpo/Contenido -->
+<body>
+	<!-- Contenedor Contenido -->
+	<div class="contenido">
+		<img src="imagenes/logo.png" class="logo" />
+		<p class="presentacion"></p>
+		<!-- Servicios -->
+		<h1>NUESTROS SERVICIOS</h1>
+		<hr />
+		<div class="servicios">
+			<!-- Sitio Web -->
+			<a href="http://10.135.223.60/redfusalibre.org">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/logo.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Web Oficial</h3>
+					Conocenos y mantente informado
+				</div>
+			</a>
+			<!-- Fin Sitio Web -->
+			<!-- Wikipedia -->
+			<a href="http://10.135.223.39/es"> <!-- IP Wikipedia -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/wikipedia.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Wikipedia</h3>
+					La Enciclopedia Libre
+				</div>
+			</a>
+			<!-- Fin Wikipedia -->
+			<!-- Emisora -->
+			<a href="http://10.135.223.106/emisora"> <!-- IP Emisora -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/emisora.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Emisora</h3>
+					Transmitiendo en vivo
+				</div>
+			</a>
+			<!-- Fin Emisora -->
+			<!-- AudioTK -->
+			<a href="http://10.135.223.51:8888"> <!-- IP AudioTK -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/audiotk.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Audio-TK</h3>
+					Escucha y Descarga la mejor música
+				</div>
+			</a>
+			<!-- Fin AudioTK -->
+			<!-- Red Social -->
+			<a href="http://10.135.223.51/elgg"> <!-- IP Red Social -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/redsocial.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Freebook. Red Social</h3>
+					Comparte y comunicate en la red
+				</div>
+			</a>
+			<!-- Fin Red Social -->
+			<!-- Juegos -->
+			<a href="http://10.135.223.39/sudoku"> <!-- IP Juegos -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/juegos.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Juegos</h3>
+					Diviertete Libremente
+				</div>
+			</a>
+			<!-- Fin Juegos -->
+			<!-- Descargas -->
+			<a href="http://10.135.223.10/descargas"> <!-- IP Descargas -->
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/descargas.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Descargas</h3>
+					Miscelanea
+				</div>
+			</a>
+			<!-- Fin Descargas -->
+			<!-- Emergencias -->
+			<a href="emergencias.htm">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/emergencias.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Emergencias</h3>
+					Números de emergencia
+				</div>
+			</a>
+			<!-- Fin Emergencias -->
+			<!-- Fotos -->
+			<a href="http://10.135.223.10/fullpage.html">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/fotos.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Fotos</h3>
+					Una pequeña galería fotográfica
+				</div>
+			</a>
+			<!-- Fin Fotos -->
+		</div>
+		<!-- Fin Servicios -->
+		<div style="clear:both;"></div>
+		<!-- Como Ayudar -->
+		<h1>¿COMO AYUDAR?</h1>
+		<hr />
+		<div class="servicios">
+			<!-- Donar Nodo -->
+			<a href="dona_un_nodo.htm">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/dona-un-nodo.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Dona un nodo</h3>
+					Crezcamos juntos
+				</div>
+			</a>
+			<!-- Fin Donar Nodo -->
+			<!-- Sumate -->
+			<a href="sumate.htm">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/sumate.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>S&uacute;mate</h3>
+					Se parte de un gran equipo
+				</div>
+			</a>
+			<!-- Fin Sumate -->
+			<!-- Comparte -->
+			<a href="proximamente.htm">
+				<div class="servicio">
+					<div class="elServicio" style="background-image:url('imagenes/comparte.png');">
+						<div class="fondoServicio">
+						</div>
+					</div>
+					<h3>Comparte</h3>
+					La red es tuya, es libre
+				</div>
+			</a>
+			<!-- Fin Comparte -->
+		</div>
+		<!-- Fin Como Ayudar -->
+		<!-- Agradecimientos -->
+		<div class="opaco">
+					AGRADECIMIENTOS</br>
+					<img src="imagenes/logoudec.png" />
+					<img src="imagenes/parsandata.png"/>
+					<img src="imagenes/bogota_mesh.png"/>
+					<img src="imagenes/espinal.png"/>
+		</div>
+		<!-- Fin Agradecimientos -->
+	</div>
+	<!-- Fin Contenedor Contenido -->
+	<!-- Pie -->
+	<div class="pie">
+		<br />
+		<b>Red Fusa Libre, 100% Libre</b><br />
+		<a href="creditos.htm">Cr&eacute;ditos</a> - <a href="codigo_de_conducta.htm">C&oacute;digo de Conducta</a><br />
+		<hr />
+		<b>Recomendamos Usar:</b> <br />
+		Navegador Web Mozilla Firefox (Descargar para <a href="software/firefox-12-0.tar.bz2">Linux(.tar.bz2)</a> - <a href="software/firefox-12-0.exe">Windows(.exe)</a>) <br />
+		Sistema Operativo Linux (Descargar: Ubuntu 11.10 <a href="#">32bits</a>,<a href="software/ubuntu-11.10-64.iso">64bits</a> - Linux Mint 11 con gnome <a href="#">32bits</a>,<a href="software/linuxmint-11-gnome-64.iso">64bits</a> - Open Suse 11 <a href="#">32bits</a>,<a href="software/opensuse-11-64.iso">64bits</a> - Kubuntu 11.04 <a href="#">32bits</a>,<a href="software/kubuntu-11-04-64.iso">64bits</a>))<br />
+		<br />
+	</div>
+	<!-- Fin Pie -->
+</body>
+<!-- Fin Cuerpo/Contenido -->
+
+</html>
